@@ -332,6 +332,10 @@ public class MongoDbClient extends DB {
       }
 
       Document queryResult = findIterable.first();
+      
+      for(Document d: findIterable){
+        Document temp = d;
+      }
 
       if (queryResult != null) {
         fillMap(result, queryResult);
